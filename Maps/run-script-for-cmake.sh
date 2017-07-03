@@ -5,6 +5,7 @@
 LOWERED_CONFIG=`echo $CONFIGURATION | tr [A-Z] [a-z]`
 CONF="debug"
 if [[ "$LOWERED_CONFIG" == *release* || "$LOWERED_CONFIG" == *production* || "$LOWERED_CONFIG" == *adhoc* ]]; then
+  echo "REALEASE BITHC!"
   CONF="release"
 fi
 
@@ -16,4 +17,4 @@ if [[ "$ONLY_ACTIVE_ARCH" == YES ]]; then
 fi
 
 echo "Building $CONF configuration"
-bash "$SRCROOT/../../tools/autobuild/ios_cmake.sh" $CONF
+bash "$OMIM_ROOT/tools/autobuild/ios_cmake.sh" $CONF

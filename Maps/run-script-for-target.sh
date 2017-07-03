@@ -30,4 +30,4 @@ if [[ "$ONLY_ACTIVE_ARCH" == YES ]]; then
 fi
 
 echo "Building $CONF configuration"
-bash "$SRCROOT/../../tools/autobuild/ios.sh" $CONF $DRAPE_CONF
+bash "$OMIM_ROOT/tools/autobuild/ios.sh" $CONF $DRAPE_CONF

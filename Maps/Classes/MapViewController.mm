@@ -46,7 +46,7 @@
 
 // If you have a "missing header error" here, then please run configure.sh script in the root repo
 // folder.
-#import "../../../private.h"
+#import "private.h"
 
 extern NSString * const kAlohalyticsTapEventKey = @"$onClick";
 extern NSString * const kMap2OsmLoginSegue = @"Map2OsmLogin";
